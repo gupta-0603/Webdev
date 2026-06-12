@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animations</title>
+    <style>
+        .container {
+background-color: rgb(16, 227, 227);
+height: 80vh;
+width: 30vw;
+
+        }
+        .box {
+width: 34px;
+height: 45px;
+background-color: aqua;
+animation: harry;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-out;
+animation-delay: 11s;
+animation-play-state: running;
+        }
+        @keyframes harry {
+            from {
+transform: translateX(1000px);
+            }
+           to {
+
+           } 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>

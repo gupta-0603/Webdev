@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on css selectors</title>
+    <style>
+/* .box:first-child { 
+    background-color: red;
+} */
+/* .box::first-line { */
+    /* color: yellow; */
+/* } 
+ */
+ /* .boxes *{
+    color: blue;
+    border: 2px solid black;
+ }
+ [data-color="primary"]{
+    padding: top: 45px;
+ } */
+ /* can be add text before and after the text */
+ .boxes::before {
+   content: "harry is good"; 
+ }
+ input:placeholder-shown {
+    color: blue;
+    font-size: 56px;
+ }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        
+        <div data-color="primary" class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vitae, numquam ipsam earum obcaecati adipisci doloribus exercitationem error, eligendi, rerum quisquam accusantium quam culpa hic ipsa. Ullam non dolore, obcaecati mollitia maxime alias eaque tenetur vero ipsam voluptatum dolores dolorem nihil placeat rerum vitae quasi consequuntur cum eveniet! Quam dolorum recusandae molestiae reprehenderit illum, culpa nisi animi. Nihil delectus iste maxime fugiat provident, blanditiis, optio explicabo magni inventore repellendus pariatur, est temporibus voluptatem recusandae unde. Illo aut, voluptates placeat veritatis eveniet voluptatum esse pariatur autem distinctio velit unde qui consectetur mollitia labore, itaque maxime quasi sed blanditiis non iste quibusdam temporibus quidem fugiat nostrum. Totam quia ea qui quisquam dignissimos nihil enim inventore magnam unde! Ipsum beatae corporis esse dolore assumenda ut commodi reprehenderit! Iure deserunt similique corrupti incidunt unde adipisci perferendis autem libero beatae, maiores animi, quisquam, atque tempora dolores impedit doloribus omnis? Vero assumenda officia doloribus impedit laborum nemo, ducimus a! Accusamus excepturi dicta exercitationem ea quas, error, omnis expedita accusantium eveniet quis fugit? Eius sunt labore, totam necessitatibus iste provident. Laborum repellendus nulla debitis voluptates fugit quam autem nemo cupiditate minus suscipit illo laboriosam minima, excepturi doloremque culpa, dicta veniam distinctio? Dolorum consequatur inventore perspiciatis enim saepe!
+        </div>
+        <div class="box">
+            hey i am box
+        </div>
+        <div class="box">
+            hey i am box
+        </div>
+        <input type="text" name="" placeholder="type your name here">
+    </div>
+</body>
+</html>

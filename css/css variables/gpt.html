@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Variables Example</title>
+  <style>
+    /* Define CSS variables */
+    :root {
+      --main-color: #3498db;
+      --bg-color: #f1f1f1;
+    }
+
+    /* Use CSS variables */
+    body {
+      background-color: var(--bg-color);
+      color: var(--main-color);
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 50px;
+    }
+
+    .container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: var(--main-color);
+      margin: 0 10px;
+    }
+
+    /* Change CSS variables on hover */
+    .box:hover {
+      --main-color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Variables Example</h1>
+
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+</body>
+</html>
